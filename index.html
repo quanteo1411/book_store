@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Book Store</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Yantramanav:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0">Book Store</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danh mục</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="goodbook.html" class="dropdown-item">Sách Hay</a>
+                                <a href="science.html" class="dropdown-item">Sách Khoa Học Viễn Tưởng</a>
+                                <a href="anime.html" class="dropdown-item">Truyện Anime</a>
+                                <a href="comedy.html" class="dropdown-item">Truyện Hài</a>
+                                <a href="children.html" class="dropdown-item">Truyện Thiếu Nhi</a>
+                                <a href="novel.html" class="dropdown-item">Tiểu Thuyết</a>
+                                <a href="horror.html" class="dropdown-item">Truyện Kinh Dị</a>
+                            </div>
+                        </div>    
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sách Điện Tử</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="postcard.html" class="dropdown-item">Postcard</a>
+                                <a href="audiobook.html" class="dropdown-item">Sách Nói</a>
+                            </div>
+                        </div>
+                        <a href="news.html" class="nav-item nav-link">Tin Tức</a>
+                        <a href="about.html" class="nav-item nav-link">Giới Thiệu</a> -->
+                    </div>
+                    <a href="register.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-right: 10px;">Đăng Ký</a>
+                    <a href="login.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-left: 10px;">Đăng Nhập</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="img/b2.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-content p-3" style="max-width: 900px;">
+                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4 wow fadeInUp" data-wow-delay="0.1s" style="letter-spacing: 3px;">Khái Quát</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-4 wow fadeInUp" data-wow-delay="0.3s">Khoa Học Viễn Tưởng</h1>
+                        <p class="fs-5 wow fadeInUp" data-wow-delay="0.5s">Thể loại tiểu thuyết hư cấu mang các yếu tố khoa học. Nó còn được gọi là "văn học về ý tưởng" và thường khám phá hoặc dự đoán những hệ quả, hậu quả tiềm tàng của những đổi mới trong khoa học, xã hội và công nghệ.
+                        </p>
+                        <div class="pt-2">
+                            <a class="btn btn-secondary rounded-pill text-white py-3 px-5 m-2 wow fadeInRight" data-wow-delay="0.3s" href="https://vi.wikipedia.org/wiki/Khoa_h%E1%BB%8Dc_vi%E1%BB%85n_t%C6%B0%E1%BB%9Fng">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="img/b1.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-content p-3" style="max-width: 900px;">
+                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">Khái Quát</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-4">Tiểu Thuyết</h1>
+                        <p class="fs-5">Tiểu thuyết là sử thi của đời tư.
+                        </p>
+                        <div class="pt-2">
+                            <a class="btn btn-secondary rounded-pill text-white py-3 px-5 m-2 wow fadeInRight" data-wow-delay="0.3s" href="https://vi.wikipedia.org/wiki/Ti%E1%BB%83u_thuy%E1%BA%BFt">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="img/b3.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-content p-3" style="max-width: 900px;">
+                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">Khái Quát</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-4">Thiếu Nhi</h1>
+                        <p class="fs-5">Loại sách được viết và thiết kế đặc biệt để dành cho độc giả trẻ em và thiếu nhi.
+                        </p>
+                        <div class="pt-2">
+                            <a class="btn btn-secondary rounded-pill text-white py-3 px-5 m-2 wow fadeInRight" data-wow-delay="0.3s" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="border bg-secondary rounded">
+                            <img src="img/b4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h4 class="text-secondary sub-title fw-bold">Cuốn Sách Nổi Bật Nhất Năm</h4>
+                        <h1 class="display-3 mb-4"><strong class="text-primary">Đắc Nhân Tâm</strong>, nói với ai đó về chính họ và họ sẽ lắng nghe bạn hàng giờ liền.</h1>
+                        <p>Cuốn sách là nghệ thuật thu phục lòng người, là làm cho tất cả mọi người yêu mến mình, bằng sự hiểu rõ bản thân, thành thật với chính mình, hiểu biết và quan tâm đến những người xung quanh để nhìn ra và khơi gợi những tiềm năng ẩn khuất nơi họ, giúp họ phát triển lên một tầm cao mới.
+                        </p>
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Training Start Sách nổi bật và hay -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Cuốn Sách nổi bật và hay</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem Tất Cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b5.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Túp Lều Của Bác Tôm</a>
+                            <p class="mb-3">Túp lều bác Tom là một cuốn tiểu thuyết bán chạy nhất trong thế kỷ 19, trong tuần đầu tiên 5.000 bản đã được bán sạch (và cũng là quyển sách bán chạy thứ hai trong thế kỷ đó, sau Kinh Thánh) và được tin là động lực cho cuộc đấu tranh bãi nô.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b6.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Trăm Năm Cô Đơn</a>
+                            <p class="mb-3">Sự cô độc thường xuyên xuất hiện trở đi trở lại trong các tác phẩm của Márquez. Nhà văn khai thác sự cô độc cả trong tình yêu, theo ông, mỗi chúng ta là một tiểu hành tinh đơn độc.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b7.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Vũ Trụ</a>
+                            <p class="mb-3">Vũ trụ (Cosmos) là một cuốn sách phổ biến khoa học của nhà thiên văn học người Mỹ Carl Sagan. Vũ trụ gồm 13 chương, cũng tương đương với 13 phần trong chương trình truyền hình Cosmos: A Personal Voyage.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Sách khoa học viễn tưởng -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Sách Khoa Học Viễn Tưởng</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem Tất Cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b4.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Đắc Nhân Tâm</a>
+                            <p class="mb-3">một trong những báu vật tri thức lớn của nhân loại. Cuốn sách với nội dung dễ tiếp cận, gần gũi với người đọc, đây sẽ là cuốn không thể thiếu đối trong tủ sách của những người ham đọc.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b9.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Nhà Giả Kim</a>
+                            <p class="mb-3">Là một trong những đầu sách nổi tiếng nhất thế giới. Nhà giả kim xoay quanh về hành trình của người thanh niên có tên là Santiago đang đi chinh phục ước mơ và hoài bão của mình.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b8.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Bố Già</a>
+                            <p class="mb-3">Là câu chuyện xoay quanh về ông trùm Mafia hàng đầu nước Mỹ, Don Vito Corleone hay còn được biết đến tên gọi khác là Bố Già.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Sách thiếu nhi -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Sách Thiếu Nhi</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem Tất Cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b10.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Hoàng Tử Bé</a>
+                            <p class="mb-3">Cuốn sách Hoàng Tử Bé của Antoine De Saint-Exupéry là một tác phẩm văn học kinh điển, đã trở thành một biểu tượng của văn hóa Pháp. Cuốn sách kể về một chuyến phiêu lưu của một phi hành gia trên sa mạc Sahara - nơi ông đã gặp một đứa trẻ nhỏ, chỉ cao bằng một ngón tay - Hoàng Tử Bé.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b11.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Alice ở xứ sở diệu kỳ</a>
+                            <p class="mb-3">Cuốn sách "Alice ở xứ sở diệu kỳ" là một tác phẩm văn học kinh điển của thế kỷ 19, kể về cuộc phiêu lưu đầy màu sắc và phù phiếm của cô bé Alice trong thế giới kỳ diệu của tác giả.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b12.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Không Gia Đình</a>
+                            <p class="mb-3">Cuốn sách kể về cuộc đời của Rémi, một cậu bé mồ côi và không gia đình. Trải qua nhiều sóng gió, cậu đã được nhận nuôi bởi một nghệ sĩ đường phố tốt bụng và cùng ông đi khắp nơi để biểu diễn.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Truyện Anime & Manga -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Truyện Anime & Manga</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b13.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">One Piece</a>
+                            <p class="mb-3">Câu chuyện xoay quanh Monkey D. Luffy, 
+                                một cậu bé có khả năng co giãn như cao su sau khi ăn phải Trái Ác Quỷ. 
+                                Luffy cùng đội ngũ thủy thủ mũ rơm của mình, bao gồm Zoro, Nami, Usopp, và Sanji, khởi hành trên con tàu Going Merry. 
+                                Họ lao vào cuộc phiêu lưu khắp đại dương, qua nhiều vùng đất lạ, đối mặt với kẻ thù khắc nghiệt và giải cứu bạn bè, 
+                                với ước mơ tìm ra kho báu huyền thoại One Piece và trở thành Vua Hải Tặc.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b14.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Doraemon</a>
+                            <p class="mb-3">Câu truyện trong bộ truyện này kể về Doraemon, 
+                                một chú mèo máy đáng yêu từ thế kỷ 22 đến để giúp đỡ Nobita Nobi, một cậu bé hay gặp rắc rối. 
+                                Với chiếc túi thần kỳ chứa đầy bảo bối kỳ diệu, Doraemon giúp Nobita giải quyết nhiều vấn đề từ học tập đến các mối quan hệ bạn bè. 
+                                Mỗi tập truyện mang lại những câu chuyện thú vị, hài hước và đôi khi là bài học sâu sắc về tình bạn, lòng dũng cảm và trí tuệ.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b15.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Naruto</a>
+                            <p class="mb-3">Truyện kể về Uzumaki Naruto, một cậu bé ninja từ làng Lá. 
+                                Naruto sinh ra đã mang trong mình hồ ly chín đuôi (Kurama), phong ấn bởi chính cha anh. 
+                                Từ nhỏ, Naruto luôn bị xa lánh, nhưng điều đó không ngăn cản tinh thần kiên cường của cậu. 
+                                Naruto quyết tâm trở thành ninja mạnh nhất và là thủ lĩnh của làng Lá, giống như cha mình.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Tiểu Thuyết -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Tiểu Thuyết</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b16.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Nhà Thờ Đức Bà Paris</a>
+                            <p class="mb-3">Tác phẩm là câu chuyện kể về nhân vật Quasimodo - một kẻ gù xấu xí, mồ côi, sống khốn khổ, 
+                                được người ta đưa về nhà thờ nuôi dưỡng và trở thành một người đánh chuông cho nhà thờ. Hắn đem lòng yêu nàng Esmeralda, 
+                                vì tình yêu Quasimodo có thể làm tất cả mọi thứ, kể cả việc giết người đã cưu mang hắn để giải thoát cho nàng Esmeralda. 
+                                Và cũng từ giây phút đó, kẻ gù ấy đã tự kết liễu đời mình.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b6.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Trăm Năm Cô Đơn</a>
+                            <p class="mb-3">Cả nội dung cuốn tiểu thuyết là nỗi cô đơn vô tận, kéo dài suốt trăm năm của một dòng tộc. 
+                                Họ mang nặng những mặc cảm cùng những lỗi lầm của quá khứ về lời nguyền dành cho những cuộc hôn nhân cận huyết đầy tội lỗi: 
+                                đứa trẻ sinh ra sẽ mang đuôi lợn trên hòn đảo xa xôi Macondo. 
+                                Thế rồi, những cái chết đau đớn chính là cách để tác giả kết thúc những việc làm sai trái ấy của họ.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b17.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Đại Gia Gatsby</a>
+                            <p class="mb-3"> Tác giả F.Scott Fitzgerald đã vạch trần được bộ mặt giả dối của những kẻ thượng lưu nước Mỹ những năm 1930, 
+                                phá bỏ vẻ đẹp hào nhoáng, xa hoa của cuộc sống đầy vật chất, và cho thấy rằng bên dưới đó hoàn toàn chỉ là sự trống rỗng, 
+                                về cả tâm hồn, tình yêu và đạo đức.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Truyện Hài -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Truyện Hài</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem Tất Cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b18.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Ice Cream for Refugees</a>
+                            <p class="mb-3">Khi bạn chụp ảnh một ngôi làng ở Áo, bạn sẽ tưởng tượng ra những tòa nhà sặc sỡ với nét cổ điển, 
+                                những con đường nhỏ hẹp, nhiều cây xanh và có lẽ là cả một dòng sông uốn lượn xung quanh. 
+                                Chà, Maisland lại được miêu tả theo một cách khác trong cuốn tiểu thuyết thú vị này. 
+                                Trong khi phần mở đầu khá cổ điển, thì mọi thứ về sau nhanh chóng leo thang.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b19.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Grown Ups</a>
+                            <p class="mb-3">Nhà Casey đại biểu cho giấc mơ của tất cả mọi người. 
+                                Họ hào nhoáng, có ngoại hình đẹp và rất thành đạt. 
+                                Gia đình thì hoàn hảo - Johnny, Ed, Liam, vợ và con của họ thường thích tụ họp suốt ngày, 
+                                dù là đến lễ ăn mừng, ngày cuối tuần hay các bữa tiệc. 
+                                Cả gia đình, hiển nhiên là được kết nối với nhau do vợ của Johnny, Jessie.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b20.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Wow, No Thank You</a>
+                            <p class="mb-3">Đây là loại sách sẽ lôi cuốn bạn ngay chương đầu tiên - 
+                                bạn sẽ không thể đặt cuốn sách xuống chừng nào bạn đọc xong trang cuối cùng. 
+                                Quyến sách dựa trên câu chuyện của Irby. Cô đã 40 tuổi và cô thấy tự ti về chính mình, 
+                                dù cho cô là một người khá là thành công trên mạng xã hội Instagram. 
+                                Tuy nhiên, cô quyết định dừng lại để theo đuổi giấc mơ.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Training Start Truyện Kinh Dị -->
+        <div class="container-fluid training py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-xl-8">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Truyện Kinh Dị</h4>
+                        </div>
+                        <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Xem Tất Cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b21.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Người Tìm Xác</a>
+                            <p class="mb-3">“Người Tìm Xác” là câu chuyện kể về Trương Tiến Bảo vừa mới ra trường và thất nghiệp phải sống cùng với bố mẹ. 
+                                Bố của Trương Tiến Bảo được coi là một “thầy cúng” lành nghề trong làng. 
+                                Vào một buổi tối, một người hàng xóm đã chạy sang nhà nhờ bố của Trương Tiến Bảo hỗ trợ tìm kiếm đứa con trai mất tích. 
+                                Tuy nhiên, ông ta vì lười mà đã bảo Tiến Bảo đi giúp người hàng xóm. 
+                                Ai có thể ngờ rằng cuộc đời của Trương Tiến Bảo sẽ thay đổi từ khoảnh khắc anh bước ra khỏi cửa nhà.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b22.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Hồ Sơ Bí Ẩn</a>
+                            <p class="mb-3">“Hồ Sơ Bí Ẩn” kể về nhân vật tên Lâm Kỳ làm việc tại văn phòng xử lý nhà ở. 
+                                Nhiệm vụ của anh là tuyên truyền, thương lượng với các hộ gia đình ở Thôn Sáu Công Nông về việc di dời. 
+                                Và anh vô tình tìm thấy một căn phòng có tấm biển "Phòng nghiên cứu hiện tượng quái dị Thanh Diệp" ở tầng 6 tòa nhà 6. 
+                                Vì tò mò mà anh đã đụng vào những bộ hồ sơ kì lạ trong văn phòng. Bộ hồ sơ với nhiều nội dung kỳ quái và rùng rợn. 
+                                Cũng từ đây mà những hiện tượng kỳ lạ bắt đầu xuất hiện trong cuộc sống của anh. 
+                                Anh có thể thấy được những thứ mà người thường không thể thấy được.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-img rounded-top">
+                            <img src="img/b23.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 600px;">
+                            <h1 class="fs-1 fw-bold bg-primary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                        </div>
+                        <div class="rounded-bottom border border-top-0 p-4">
+                            <a href="#" class="h4 mb-3 d-block">Tơ Đồng Rỏ Máu</a>
+                            <p class="mb-3">“Tơ Đồng Rỏ Máu” là câu chuyện kể về một châu nọ liên tục xảy ra các vụ án mạng vào thời nhà Minh. 
+                                Lần lượt các cô gái mất tích, điểm chung giữa họ khi tìm thấy xác là đều mất một ngón tay. 
+                                Một bộ khoái đã đảm nhận điều tra kẻ thủ ác của vụ án. 
+                                Sau nhiều năm điều tra vẫn chưa thể phá án, bộ khoái quyết định giăng một cái bẫy để bắt tên thủ phạm.</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+        <!-- Blogs Start -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="pb-5">
+                    <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Tin Tức</h4>
+                </div>
+                <div class="blog-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-img rounded-top">
+                            <img src="img/tt3.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 450px;">
+                        </div>
+                        <div class="bg-light rounded-bottom p-4">
+                            <div class="d-flex justify-content-between mb-4">
+                                <a href="#" class="text-muted"><i class="fa fa-calendar-alt text-primary"></i>Ngày 20 tháng 07 năm 2024</a>
+                            </div>
+                            <a href="#" class="h4 mb-3 d-block">Top 10 những cuốn sách hay nhất mọi thời đại</a>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="blog-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-img rounded-top">
+                            <img src="img/tt2.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 450px;">
+                        </div>
+                        <div class="bg-light rounded-bottom p-4">
+                            <div class="d-flex justify-content-between mb-4">
+                                <a href="#" class="text-muted"><i class="fa fa-calendar-alt text-primary"></i>Ngày 10 tháng 06 năm 2024</a>
+                            </div>
+                            <a href="#" class="h4 mb-3 d-block">10 truyện cổ tích dành cho thiếu nhi</a>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                    <div class="blog-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="blog-img rounded-top">
+                            <img src="img/tt1.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 400px ; height: 450px;">
+                        </div>
+                        <div class="bg-light rounded-bottom p-4">
+                            <div class="d-flex justify-content-between mb-4">
+                                <a href="#" class="text-muted"><i class="fa fa-calendar-alt text-primary"></i>Ngày 15 tháng 06 năm 2024</a>
+                            </div>
+                            <a href="#" class="h4 mb-3 d-block">Top 5 lí do tại sao chúng ta nên đọc sách mỗi ngày</a>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blogs End -->
+
+        <!-- Team Start Tác Giả -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="pb-5">
+                    <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">Các Tác Giả</h4>
+                </div>
+                <div class="team-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item border rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-img bg-secondary rounded-top">
+                            <img src="img/tg1.jpeg" class="img-fluid rounded-top w-100" alt="Image" style="width: 250px ; height: 330px;">
+                        </div>
+                        <div class="team-content text-center p-4">
+                            <a href="#" class="h4">Dale Carnegie</a>
+                        </div>
+                    </div>
+                    <div class="team-item border rounded wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-img bg-secondary rounded-top">
+                            <img src="img/tg2.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 250px ; height: 330px;">
+                        </div>
+                        <div class="team-content text-center p-4">
+                            <a href="#" class="h4">Harriet Beecher Stowe</a>
+                        </div>
+                    </div>
+                    <div class="team-item border rounded wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-img bg-secondary rounded-top">
+                            <img src="img/tg3.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 250px ; height: 330px;">
+                        </div>
+                        <div class="team-content text-center p-4">
+                            <a href="#" class="h4">Gabriel García Márquez</a>
+                        </div>
+                    </div>
+                    <div class="team-item border rounded wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-img bg-secondary rounded-top">
+                            <img src="img/tg4.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 250px ; height: 330px;">
+                        </div>
+                        <div class="team-content text-center p-4">
+                            <a href="#" class="h4">Paulo Coelho</a>
+                        </div>
+                    </div>
+                    <div class="team-item border rounded wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="team-img bg-secondary rounded-top">
+                            <img src="img/tg5.jpg" class="img-fluid rounded-top w-100" alt="Image" style="width: 250px ; height: 330px;">
+                        </div>
+                        <div class="team-content text-center p-4">
+                            <a href="#" class="h4">Mario Puzo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/app.js"></script>
+    </body>
+
+</html>
